@@ -246,3 +246,23 @@ hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
   .band, .toc, .top-links { display: none; }
   main.container { margin: 0; box-shadow: none; border: none; }
 }
+
+/* Numbered steps (account deletion) */
+ol.steps { counter-reset: step; }
+ol.steps li { padding-left: 36px; margin-bottom: 12px; }
+ol.steps li::before {
+  content: counter(step);
+  counter-increment: step;
+  top: 0.1em;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--leaf-tint);
+  color: var(--heading);
+  font-size: 12.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
