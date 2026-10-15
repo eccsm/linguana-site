@@ -105,6 +105,7 @@
             <ul>
                 <li><strong>Crash reports:</strong> Firebase Crashlytics collects crash logs and basic device details (model, OS version, app version) so we can fix bugs</li>
                 <li><strong>Usage analytics:</strong> Google Analytics for Firebase records how the app is used: screens you open, scenes you start and finish (scene, language, stars, number of messages, duration), when the subscription screen is shown and when a subscription starts. These events carry your account type (guest or member), plan (free or Pro), the languages you picked, your Linguana user ID and a random app-instance ID. We use them to see which parts of Linguana help people learn and to measure our own app-install campaigns</li>
+                <li><strong>Meta app events (Android):</strong> To measure our ads on Instagram and Facebook, the Facebook SDK in Linguana sends Meta app installs and app opens, and three milestones: choosing the language to practise, finishing your first scene, and starting a subscription (plan and price). These events carry your device's advertising ID and basic device information, not your name, email address or conversations. They are sent only where Google's consent message does not apply; in the European Economic Area, the United Kingdom and Switzerland they are not sent</li>
                 <li><strong>Push notifications:</strong> If you allow notifications, we store a Firebase Cloud Messaging token to send reminders. You can turn notifications off in your device settings</li>
             </ul>
 
@@ -117,7 +118,7 @@
             <h3>7. Advertising ID</h3>
             <ul>
                 <li><strong>What it is:</strong> A resettable identifier provided by Google Play services or iOS</li>
-                <li><strong>How it's used:</strong> Google AdMob uses it to show ads, limit how often you see the same ad, measure ad performance and prevent fraud. Google Analytics for Firebase may use it to tell which of our ad campaigns brought you to Linguana</li>
+                <li><strong>How it's used:</strong> Google AdMob uses it to show ads, limit how often you see the same ad, measure ad performance and prevent fraud. Google Analytics for Firebase may use it to tell which of our ad campaigns brought you to Linguana. On Android, outside the European Economic Area, the United Kingdom and Switzerland, it is also sent to Meta with the app events described above, so Meta can tell which of our Instagram and Facebook ads brought you to Linguana</li>
                 <li><strong>Consent:</strong> In the European Economic Area, the United Kingdom and Switzerland, Linguana shows Google's consent message before any ad is requested, and ads are personalized only if you agree. You can change your choice at any time in <strong>Me → Privacy choices</strong>. If you decline, you may still see non-personalized ads. Elsewhere, ads may be personalized unless you turn off ad personalization in your device settings</li>
                 <li><strong>Location:</strong> We do not collect your precise location. Advertising partners may infer an approximate location (such as your country or city) from your IP address</li>
                 <li><strong>Control:</strong> You can reset or delete your Advertising ID, or opt out of ad personalization, in your device settings</li>
@@ -180,7 +181,7 @@
             <strong>Privacy Policy:</strong> <a href="https://zeekend.com/privacy" target="_blank">https://zeekend.com/privacy</a></p>
 
             <h3>Google Sign-In, Sign in with Apple and Facebook Login</h3>
-            <p><strong>Purpose:</strong> Optional ways to sign in. Linguana uses the Facebook SDK for login only, with automatic app event logging and advertising ID collection turned off<br>
+            <p><strong>Purpose:</strong> Optional ways to sign in. On Android, the Facebook SDK also sends the Meta app events described under Device and Diagnostic Information, where Google's consent message does not apply<br>
             <strong>Privacy Policies:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google</a> · <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple</a> · <a href="https://www.facebook.com/privacy/explanation" target="_blank">Meta</a></p>
 
             <h3>RevenueCat</h3>
@@ -295,7 +296,7 @@
             <h3>AD_ID Permission</h3>
             <ul>
                 <li><strong>Why we need it:</strong> Required for apps using Google AdMob advertising on Android 13+</li>
-                <li><strong>What it does:</strong> Lets AdMob read the Advertising ID for ad delivery, frequency capping, measurement and fraud prevention, and lets Google Analytics for Firebase attribute installs to our ad campaigns. Ads are personalized only as described under Advertising ID above</li>
+                <li><strong>What it does:</strong> Lets AdMob read the Advertising ID for ad delivery, frequency capping, measurement and fraud prevention, and lets Google Analytics for Firebase and Meta attribute installs to our ad campaigns (Meta only outside the EEA, UK and Switzerland). Ads are personalized only as described under Advertising ID above</li>
                 <li><strong>Your control:</strong> You can reset or delete your Advertising ID in device settings</li>
             </ul>
         </div>
