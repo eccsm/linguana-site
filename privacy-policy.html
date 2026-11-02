@@ -32,7 +32,7 @@
 
         <div class="meta">
             <strong>Effective Date:</strong> December 2, 2025<br>
-            <strong>Last Updated:</strong> October 31, 2026
+            <strong>Last Updated:</strong> November 2, 2026
         </div>
 
         <nav class="toc" aria-label="Contents">
@@ -113,12 +113,13 @@
             <ul>
                 <li>Subscriptions and in-app purchases are processed by Google Play or the App Store. We never receive your card or payment details</li>
                 <li>RevenueCat receives your purchase history and app user ID to confirm what you've bought</li>
+                <li><strong>Linking purchases to our analytics and ads:</strong> If you allow analytics, Linguana also gives RevenueCat its random Google Analytics app-instance ID, so RevenueCat can report trials and subscriptions to our Google Analytics under the same ID as your other app events. If you allow ad measurement, Linguana also lets RevenueCat collect your advertising ID, Android ID (on Android) and IP address, so we can tell which of our ad campaigns led to a subscription. Where Google's consent message does not apply, both are on; in the European Economic Area, the United Kingdom and Switzerland they follow your choices in <strong>Me → Privacy choices</strong>. Neither carries your name, email address or conversations</li>
             </ul>
 
             <h3>7. Advertising ID</h3>
             <ul>
                 <li><strong>What it is:</strong> A resettable identifier provided by Google Play services or iOS</li>
-                <li><strong>How it's used:</strong> Google AdMob uses it to show ads, limit how often you see the same ad, measure ad performance and prevent fraud. Google Analytics for Firebase may use it to tell which of our ad campaigns brought you to Linguana. On Android, outside the European Economic Area, the United Kingdom and Switzerland, it is also sent to Meta with the app events described above, so Meta can tell which of our Instagram and Facebook ads brought you to Linguana</li>
+                <li><strong>How it's used:</strong> Google AdMob uses it to show ads, limit how often you see the same ad, measure ad performance and prevent fraud. Google Analytics for Firebase may use it to tell which of our ad campaigns brought you to Linguana. On Android, outside the European Economic Area, the United Kingdom and Switzerland, it is also sent to Meta with the app events described above, so Meta can tell which of our Instagram and Facebook ads brought you to Linguana. With your consent to ad measurement, RevenueCat also receives it, as described under Purchases, to link subscriptions to our ad campaigns</li>
                 <li><strong>Consent:</strong> In the European Economic Area, the United Kingdom and Switzerland, Linguana shows Google's consent message before any ad is requested, and ads are personalized only if you agree. You can change your choice at any time in <strong>Me → Privacy choices</strong>. If you decline, you may still see non-personalized ads. Elsewhere, ads may be personalized unless you turn off ad personalization in your device settings</li>
                 <li><strong>Location:</strong> We do not collect your precise location. Advertising partners may infer an approximate location (such as your country or city) from your IP address</li>
                 <li><strong>Control:</strong> You can reset or delete your Advertising ID, or opt out of ad personalization, in your device settings</li>
@@ -191,7 +192,7 @@
             <strong>Privacy Policies:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google</a> · <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple</a> · <a href="https://www.facebook.com/privacy/explanation" target="_blank">Meta</a></p>
 
             <h3>RevenueCat</h3>
-            <p><strong>Purpose:</strong> In-app purchase and subscription management<br>
+            <p><strong>Purpose:</strong> In-app purchase and subscription management, and, with your consent, linking subscriptions to our analytics and ad campaigns (see Purchases)<br>
             <strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></p>
         </div>
 
@@ -302,7 +303,7 @@
             <h3>AD_ID Permission</h3>
             <ul>
                 <li><strong>Why we need it:</strong> Required for apps using Google AdMob advertising on Android 13+</li>
-                <li><strong>What it does:</strong> Lets AdMob read the Advertising ID for ad delivery, frequency capping, measurement and fraud prevention, and lets Google Analytics for Firebase and Meta attribute installs to our ad campaigns (Meta only outside the EEA, UK and Switzerland). Ads are personalized only as described under Advertising ID above</li>
+                <li><strong>What it does:</strong> Lets AdMob read the Advertising ID for ad delivery, frequency capping, measurement and fraud prevention, lets Google Analytics for Firebase and Meta attribute installs to our ad campaigns (Meta only outside the EEA, UK and Switzerland), and lets RevenueCat link subscriptions to them with your consent. Ads are personalized only as described under Advertising ID above</li>
                 <li><strong>Your control:</strong> You can reset or delete your Advertising ID in device settings</li>
             </ul>
         </div>
